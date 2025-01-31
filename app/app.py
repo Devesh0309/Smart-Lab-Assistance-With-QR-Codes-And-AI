@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/<id>/home')
 def home(id):
-    # fetch manual'data for id
+    # fetch manual's data for id
     manual = get_manual(id)
     ID = manual[0]
     TITLE = manual[1]

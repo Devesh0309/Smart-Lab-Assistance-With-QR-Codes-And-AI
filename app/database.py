@@ -34,7 +34,7 @@ def get_manual(id: int):
 
 
 def get_yt_videos(query: str):
-    MAX_RESULTS = 3  # thala for a reason!
+    MAX_RESULTS = 3 
     url = f'https://www.googleapis.com/youtube/v3/search?part=snippet&q={query}&type=video&maxResults={MAX_RESULTS}&key={YOUTUBE_API_KEY}'
     response = requests.get(url)
     data = response.json()
