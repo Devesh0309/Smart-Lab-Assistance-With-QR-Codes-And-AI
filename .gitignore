@@ -1,0 +1,5 @@
+venv/
+app/.env
+app/__pycache__
+app/script.sql
+documentations/
